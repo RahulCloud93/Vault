@@ -11,7 +11,7 @@ build:
     image_template: vault-1.2
 
 deploy:
-    context: RahulCloud93/DEV
+    context: jw/DEV
     type: statefulset
     ingress: none
     replicas: 1
@@ -30,6 +30,6 @@ volumes:
     size: 5Gi
 
 properties:
-    revision: 2
+    revision: 3
     ENABLE_AUTO_PASSWORD: True
     
